@@ -11,11 +11,60 @@
         <div class="side-image">
             <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="green-background">
             <div class="odin"><img src="images/odin-lined.png" alt="odin"><span>ODIN</span></div>
+            <div class="credits">Photo by <a href="https://unsplash.com/pt-br/@haliewestphoto">Halie West</a> on
+                <a href="https://unsplash.com/pt-br/fotografias/planta-da-folha-verde-na-fotografia-de-perto-25xggax4bSA">Unsplash</a></div>
         </div>
         <div class="main-content">
-            <div class="main-top"></div>
-            <div class="main-mid"></div>
-            <div class="main-bottom"></div>
+            <div class="main-top">
+                <div class="simple-text">
+                    <p>This is not a real online service! You know you need something</p>
+                    <p>like this in your life to help you realize your deepest dreams.</p>
+                    <p>Sign up <em>now</em> to get started.</p>
+                    <span><p>You <em>know</em> you want to.</p></span>
+                </div>
+            </div>
+            <div class="main-mid">
+                <span>Let's do this!</span>
+                <form action="" id="form" method="get">
+                    <ul>
+                        <div class="left-column">
+                            <li>
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first_name">
+                            </li>
+                            <li>
+                                <label for="mail">EMAIL</label>
+                                <input type="email" id="mail" name="email">
+                            </li>
+                            <li>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" pattern="^.{8,}$">
+                                <span></span>
+                            </li>
+                        </div>
+                        <div class="right-column">
+                            <li>
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last_name">
+                            </li>
+                            <li>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="phone_number" pattern="^\d+$">
+                            </li>
+                            <li>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="confirm_password" pattern="^.{8,}$">
+                                <span></span>
+                            </li>
+                        </div>
+                    </ul>
+                </form>
+            </div>
+            <div class="main-bottom"><div>
+                <button form="form">Create Account</button>
+                    <p>Already have an account? <a href="index.html">Log in</a></p>
+            </div>
+            </div>
         </div>
     </main>
 </body>

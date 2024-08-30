@@ -81,25 +81,26 @@ main {
 
 .main-content > div {
     flex: 1;
-    border: 1px solid #ccc;
 }
 
 .main-top {
-    background-color: lightblue;
+    background-color: #f9fafc;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .main-mid {
-    background-color: lightgreen;
+    background-color: #ffffff;
 }
 
 .main-bottom {
-    background-color: lightcoral;
+    background-color: #f9fafc;
 }
 
 .side-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .odin {
@@ -110,7 +111,7 @@ main {
     font-size: 6rem; 
     width: 100%;
     height: 20%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.35);
     text-align: center;
     display: flex;
     align-items: center;
@@ -128,4 +129,147 @@ main {
 .odin span {
     font-family: "norsebold";
     color: white;
+}
+
+.credits {
+  position: absolute;
+  transform: translate(0, -100%);
+  color: white;
+  font-size: 1rem; 
+  text-align: center;
+  width: 100%;
+}
+
+.credits a {
+  color: white;
+}
+
+.simple-text {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: start;
+  margin: 2rem;
+  font-weight: 600;
+}
+
+.simple-text span p{
+  margin: 2rem 0;
+  text-align: left;
+}
+
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: space-around; 
+}
+
+form ul div {
+  width: 48%; 
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+form ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+
+form input {
+  width: auto;
+  max-width: 50%; 
+  padding: 0.5rem;
+  border: 2px solid #E5E7Eb;
+  border-radius: 4px;
+}
+
+.right-column li {
+  margin-left: -15rem;
+}
+
+.right-column input {
+  width: auto;
+  max-width: 40%; 
+  padding: 0.5rem;
+  border: 2px solid #E5E7Eb;
+  border-radius: 4px;
+}
+
+.main-mid span {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: start;
+  margin: 2rem;
+  font-weight: 600;
+}
+
+.main-bottom div {
+  margin: 4rem;
+}
+
+.main-bottom button {
+  margin-bottom: 1em;
+  padding: 15px 32px;
+  background-color: #596D48;
+  color: white;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.3);
+}
+
+.main-bottom button:hover {
+  background-color: #65814c;
+}
+
+input:focus{
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: 6px 6px 6px -5px rgba(0,0,0,0.4);
+  transition: 0.5s;
+}
+
+form input[type=password]:invalid{
+  border: 1px solid red;
+  outline: none;
+}
+
+form input[type=email]:invalid{
+  border: 1px solid red;
+  outline: none;
+}
+
+form input[type=tel]:invalid{
+  border: 1px solid red;
+  outline: none;
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+}
+
+input:invalid + span::before{
+  content: "*Password need to be 8 characters long";
+  color: red;
+  font-size: 1rem;
+}
+
+.main-bottom a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 600;
 }
