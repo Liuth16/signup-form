@@ -212,6 +212,7 @@ input:invalid + span::before{
   content: "*Password need to be 8 characters long";
   color: red;
   font-size: 1rem;
+  top: -35px;
 }
 
 .main-bottom a {
